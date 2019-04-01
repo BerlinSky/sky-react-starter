@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
-import logo from '../shared/images/logo.svg'
 
 import Home from './Home/Home'
+import Header from '../shared/components/layout/Header'
+import Footer from '../shared/components/layout/Footer'
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header title="Welcome to SKY Club" />
         <Home />
+        <Footer />
       </div>
     );
   }
