@@ -5,7 +5,8 @@ import React, { Component } from 'react'
 // import Timer from './Pomodoro/Timer'
 // import Coins from './Coins/Coins'
 // import Chart from './Chart/Chart'
-import Animation from './Animation/Animation'
+// import Animation from './Animation/Animation'
+import Numbers from './Numbers/Numbers'
 
 import Header from '../shared/components/layout/Header'
 import Content from '../shared/components/layout/Content'
@@ -20,7 +21,7 @@ class App extends Component {
       <div className="App">
         <Header title="Welcome to SKY Club" />
         <Content>
-          <Animation />
+          <Numbers />
         </Content>
         <Footer />
       </div>
