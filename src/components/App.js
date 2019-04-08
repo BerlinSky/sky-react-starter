@@ -7,7 +7,8 @@ import React, { Component } from 'react'
 // import Chart from './Chart/Chart'
 // import Animation from './Animation/Animation'
 // import Numbers from './Numbers/Numbers'
-import Xss from './Xss/Xss'
+// import Xss from './Xss/Xss'
+import Calculator from './Calculator/Calculator'
 
 import Header from '../shared/components/layout/Header'
 import Content from '../shared/components/layout/Content'
@@ -22,7 +23,7 @@ class App extends Component {
       <div className="App">
         <Header title="Welcome to SKY Club" />
         <Content>
-          <Xss />
+          <Calculator />
         </Content>
         <Footer />
       </div>
