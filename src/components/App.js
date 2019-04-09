@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Popup from 'react-popup'
 
 // import Home from './Home/Home'
 // import Todo from './Todo/Todo'
@@ -8,13 +9,14 @@ import React, { Component } from 'react'
 // import Animation from './Animation/Animation'
 // import Numbers from './Numbers/Numbers'
 // import Xss from './Xss/Xss'
-import Calculator from './Calculator/Calculator'
+import Person from './Person/Person'
 
 import Header from '../shared/components/layout/Header'
 import Content from '../shared/components/layout/Content'
 import Footer from '../shared/components/layout/Footer'
 
 import './App.css';
+import './Popup.css';
 
 class App extends Component {
   
@@ -23,9 +25,11 @@ class App extends Component {
       <div className="App">
         <Header title="Welcome to SKY Club" />
         <Content>
-          <Calculator />
+          <Person />
         </Content>
         <Footer />
+
+        <Popup />
       </div>
     );
   }
