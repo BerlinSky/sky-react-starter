@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
-import Popup from 'react-popup'
-import Helmet from 'react-helmet'
+// import React, { Component } from 'react'
+import React from 'react'
+import { element } from 'prop-types'
+// import Popup from 'react-popup'
+// import Helmet from 'react-helmet'
 
 // import Home from './Home/Home'
 // import Todo from './Todo/Todo'
@@ -10,37 +12,29 @@ import Helmet from 'react-helmet'
 // import Animation from './Animation/Animation'
 // import Numbers from './Numbers/Numbers'
 // import Xss from './Xss/Xss'
-import Person from './Person/Person'
+// import Person from './Person/Person'
 
 import Header from '../shared/components/layout/Header'
 import Content from '../shared/components/layout/Content'
 import Footer from '../shared/components/layout/Footer'
 
 import './App.css';
-import './Popup.css';
+// import './Popup.css';
 
-class App extends Component {
-  
-  render() {
-    return (
-      <div className="App">
-        <Helmet title="Person Information Manager" 
-          meta={[
-            { name: 'title, content: "Person Information System' },
-            { name: 'description, content: "This page is about how to sail in the occean' },
-          ]}
-        />  
+const App = props => (
+  <div className="App">
+    <Header title="Welcome to SKY Club" />
 
-        <Header title="Welcome to SKY Club" />
-        <Content>
-          <Person />
-        </Content>
-        <Footer />
+    <Content>
+      { props.children }
+    </Content>
 
-        <Popup />
-      </div>
-    );
-  }
+    <Footer />
+  </div>
+)
+
+App.prototype = {
+  children: element
 }
 
 export default App;
