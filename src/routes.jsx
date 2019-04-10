@@ -15,6 +15,7 @@ const AppRoutes = () => (
       <Route path="/about" component={ About } exact />
       <Route path="/contact" component={ Contact } exact />
       <Route path="/notes" component={ Notes } exact />
+      <Route path="/notes/:noteId" component={ Notes } exact />
       <Route component={ Error404 } />
     </Switch>
   </App>
