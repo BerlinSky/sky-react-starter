@@ -36,7 +36,7 @@ class Notes extends Component {
   )
 
   render() { 
-    console.log(this.props);
+    // console.log(this.props);
 
     const { match: { params: { noteId }} } = this.props
     const { notes } = this.state
